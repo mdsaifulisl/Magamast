@@ -1,0 +1,409 @@
+
+
+/* SMART WEARABLE start */
+#se{
+    width: 100%;
+    padding-top: 13rem;
+    display: flex;
+    position: relative;
+   
+}
+#se .watch-btn{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 55%;
+    z-index: 9;
+    overflow: hidden;
+    left: 0;
+    padding: 1rem 6%;
+
+}
+
+#se .watch-btn i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--White);
+    border: 2px solid var(--border-color);
+    filter: drop-shadow(1px 1px 5px var(--border-color));
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.smart{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    /* gap: 10px; */
+    scroll-behavior: smooth;
+}
+.smart.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+.smart.dragging .box{
+    pointer-events: none;
+}
+.box {
+    position: relative;
+    min-width:100%;
+    padding: 2rem 10%;
+    border-radius: 10px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 3rem;
+    margin-left: 10px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--frist);
+    color: var(--White);
+    cursor: pointer;
+    
+}
+
+.box .box-item1 h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.box .box-item1 h1{
+    margin: 1rem 0;
+    font-size: 40px;
+    letter-spacing: 20px;
+    color: var(--Yellow2);
+}
+.box .box-item1 h1 span{
+    color: var(--primry-color);
+}
+.box .box-item1 h1 #span{
+    color: var(--White);
+}
+.box .box-item1 a{
+    font-weight: 600;
+    transition: .5s;
+}
+.box .box-item1 a:hover{
+    color: var(--White);
+}
+/* SMART WEARABLE end */
+
+/* Smartphones Start */
+.smartphone{
+    margin-bottom: 2rem;
+}
+.phcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.smartphone .phcontainer h2{
+    border-bottom: 3px solid var(--primry-color);
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+.smartphone .phcontainer a{
+    padding: .5rem 1rem;
+    background-color: var(--line);
+    transition: .2s;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.smartphone .phcontainer a i{
+    color: var(--primry-color);
+}
+.smartphone .phcontainer a:hover{
+    color: var(--primry-color);
+}
+.smartphone .phcontainer a:hover i{
+    color: var(--text-color);
+}
+.smartphone .phcontainer h2 span{
+    color: var(--primry-color);
+}
+
+
+.smart__item, 
+.smart__Shop, 
+.smart__electronics,
+.smart__Daily {
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    cursor: pointer;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
+}
+.smart__item::-webkit-scrollbar{
+    display: none;
+}
+.smart__item .item{
+    position: relative;
+    height: 295px;
+    min-width: 227px;
+    border: 1px solid var(--text-color);
+    border-radius: 15px;
+    transition: .5s;
+    
+}
+
+.smart__item .item:hover{
+    filter: drop-shadow(5px 5px 5px black);
+}
+.smart__item .item .off{
+    position: absolute;
+    top: 0;right: 0;
+    line-height: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    padding: .5rem 1rem;
+    background-color: var(--primry-color);
+    color: var(--White);
+    border-radius: 0 15px 0 15px;
+}
+.smart__item .item .img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0 0;
+    background-color: var(--border-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smart__item .item .img img{   
+    height: 154px;
+}
+.smart__item .item .items{
+    margin-top: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.smart__item .item .items h5{
+    font-size: 14px;
+}
+.smart__item .item .items p{
+    font-weight: 600;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.smart__item .item .items a{
+    font-weight: 600;
+    color: var(--button);
+    cursor: pointer;
+    transition: .5s;
+}
+.smart__item .item .items a:hover{
+    color: var(--primry-color);
+}
+
+.smart__Shop .Shop_From_Top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.smart__Daily .daily{
+    min-width: 180px;
+    height: 250px;
+    border-radius: 10px;
+}
+.smart__Daily .daily .daily1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-color: var(--background2);
+}
+
+.smart__Daily .daily .daily2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+.smart__Daily .daily .daily2 p{
+    font-size: 11px;
+}
+/* Smartphones End */
+
+/* Footer Start */
+.footer{
+    background-color: var(--primry-color);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: var(--White);
+}
+
+.footer footer .mage{
+    display: flex;
+    flex-direction: column;
+}
+.footer footer .maga h2{
+    font-size: 40px;
+    margin-bottom: 2rem;
+}
+
+.footer footer .maga .contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.footer footer .maga .contact h3{
+    margin-bottom: 1rem;
+}
+.footer footer .maga .contact .whatsapp{
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+.footer footer .maga .contact .whatsapp i{
+    font-size: 25px;
+}
+.footer footer .maga .contact .whatsapp h6{
+    font-size: 14px;
+}
+.footer footer .maga .app{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    
+}
+.footer footer .maga .app a img{
+    width: 100px;
+}
+
+.footer footer .maga h4{
+    margin-bottom: 1.5rem;
+    padding-bottom: .5rem;
+    border-bottom: 3px solid var(--White);
+}
+
+.footer footer .maga ul{
+    margin-left: 2rem;
+}
+.footer footer .maga ul li{
+    font-size: 16px;
+    margin-bottom: .5rem;
+}
+
+.end{
+    padding-top: 2rem;
+    border-top: 1px solid var(--background2);
+    color: var(--White);
+    margin-top: 2rem;
+    text-align: center;
+}
+.end p{
+    font-size: 20px;
+}
+/* Footer End */
+
+
+
+
+
+
+
+@media (max-width:1320px){
+    /* .heading{
+        font-size: 50px;
+    } */
+    .box .box-item1 h1{
+        font-size: 35px;
+        letter-spacing: 5px;
+       
+    }
+    
+}
+@media (max-width:1140px){
+   
+}
+@media (max-width:960px){
+    /* .heading{
+        font-size: 38px;
+        font-weight: 400;
+    } */
+
+    section{
+        padding: 1rem 2rem;  
+    }
+
+    /* SMART WEARABLE start */
+    .box .box-item1 h3{
+        font-size: 25px;
+    }
+    .box .box-item1 h1{
+        font-size: 30px;
+    }
+
+    #se .watch-btn{
+        padding: 0;
+    
+    }
+    /* SMART WEARABLE end */
+}
+@media (max-width:720px){
+  
+    /* SMART WEARABLE start */
+    .box {
+        flex-wrap: wrap;
+    }
+    .box .box-item2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* SMART WEARABLE end  */
+
+    
+    
+}
+@media (max-width:540px){
+    section{
+        padding: 1rem 1rem;  
+    }
+    .main-header .search{
+        top: 5rem;
+        right: -999999px;
+    }
+    .main-header .search.active{
+        right: 5%;width: 90%;
+    }
+    .main-header .header-item a{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Smartphones start */
+    .smartphone .phcontainer {
+        flex-direction: column;
+        align-items: self-start;
+        gap: 10px;
+        text-align: left;
+    }
+    /* Smartphones End */
+}
